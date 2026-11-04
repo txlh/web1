@@ -21,8 +21,10 @@ assets/css/styles.css      全部样式：色板变量、排版、版式、响�
 assets/js/app.js           交互：吸顶导航、移动菜单、滚动进场、数字滚动、
                            跑马灯、hero 视差、Canvas 抖动画笔、背景音乐
 assets/img/                从原始幻灯片裁切出的图片 + SVG logo
-assets/audio/sunset.mp3    背景音乐（原文件 103 MB，见下方说明）
+assets/audio/sunset.mp3    背景音乐（2:50，128 kbps，2.6 MB）
 tools/crop_assets.py       图片裁切的脚本（坐标按幻灯片比例，可复现）
+tools/extract_audio.py     从视频抽音轨转 128 kbps MP3 的脚本
+tools/fetch_ffmpeg.py      无 pip 时直接下载 imageio-ffmpeg 轮子并解包
 ```
 
 ## 背景音乐
@@ -38,9 +40,16 @@ tools/crop_assets.py       图片裁切的脚本（坐标按幻灯片比例，�
 - 想换音乐：替换 `assets/audio/sunset.mp3` 即可（保持文件名），或改 `index.html` 里
   `<audio id="bgm" src="...">` 的路径。
 
-> **文件体积**：原始 mp3 有 103 MB，浏览器打开页面时会按需流式读取——从本地磁盘打开
-> 没有感觉，但放到服务器上会让首屏和缓存变重。如果要上线，建议压成 96–128 kbps 的版本
-> （约 5–15 MB），或截取 2–3 分钟做循环。仓库里没有音频转码工具，所以保留了原文件。
+> **音频怎么来的**：`D:\sunset.mp4`（103 MB，视频轨占绝大部分）用
+> `tools/extract_audio.py` 抽出音轨，`libmp3lame` 压到 **128 kbps / 44.1 kHz / 立体声**，
+> 得到 2 分 50 秒、2.6 MB 的 MP3。同样的命令可以重新跑：
+>
+> ```powershell
+> python tools/extract_audio.py --input D:\sunset.mp4 --output D:\bgm.mp3
+> ```
+>
+> 128 kbps 的体积只跟「比特率 × 时长」有关，约每分钟 0.94 MB；想更小就加
+> `--bitrate 96k`、`--mono`，或用 `--start/--duration` 只截一段做循环。
 
 ## 内容（中英双文）
 

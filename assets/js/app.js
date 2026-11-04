@@ -172,4 +172,110 @@
       rt = setTimeout(paint, 220);
     });
   }
+
+  /* ── background music ───────────────────────────────────────
+     Browsers only start audio without a gesture in some cases, so we
+     try on load, fall back to the first interaction, and always keep a
+     visible toggle.                                                     */
+  const audio = document.getElementById('bgm');
+  const soundBtn = document.getElementById('sound');
+
+  if (audio && soundBtn) {
+    const LEVEL = 0.32;
+    const FADE_MS = 1600;
+    let fade = null;
+    let started = false;
+
+    const paintButton = (on) => {
+      soundBtn.setAttribute('aria-pressed', String(on));
+      soundBtn.classList.remove('is-idle');
+      soundBtn.setAttribute(
+        'aria-label',
+        on ? '背景音乐：关 / Background music: off'
+           : '背景音乐：开 / Background music: on'
+      );
+    };
+
+    const fadeTo = (to, ms = FADE_MS) => new Promise((resolve) => {
+      if (fade) clearInterval(fade);
+      const from = Number.isFinite(audio.volume) ? audio.volume : 0;
+      const t0 = performance.now();
+      fade = setInterval(() => {
+        const p = Math.min(1, (performance.now() - t0) / ms);
+        audio.volume = Math.max(0, Math.min(1, from + (to - from) * p));
+        if (p >= 1) {
+          clearInterval(fade);
+          fade = null;
+          resolve();
+        }
+      }, 40);
+    });
+
+    /* first-gesture unlock: declared up front so giveUp() can always unbind */
+    let unlock = null;
+    const events = ['pointerdown', 'keydown', 'touchstart', 'wheel'];
+    const detach = () => {
+      if (unlock) events.forEach((e) => window.removeEventListener(e, unlock));
+    };
+
+    /* the audio file is broken or not decodable — don't leave a dead button */
+    const giveUp = () => {
+      soundBtn.hidden = true;
+      detach();
+    };
+
+    const start = async () => {
+      audio.volume = 0;
+      try {
+        await audio.play();
+        started = true;
+        paintButton(true);
+        fadeTo(LEVEL);
+        return true;
+      } catch (err) {
+        if (err && err.name === 'NotSupportedError') { giveUp(); return false; }
+        paintButton(false);
+        soundBtn.classList.add('is-idle');
+        return false;
+      }
+    };
+
+    const stop = async () => {
+      await fadeTo(0, 500);
+      audio.pause();
+      paintButton(false);
+    };
+
+    /* autoplay on arrival, unless the visitor muted it last time */
+    const saved = (() => {
+      try { return localStorage.getItem('cpc:music'); } catch (e) { return null; }
+    })();
+    if (saved !== 'off') start();
+
+    /* if autoplay was blocked, start at the first interaction instead */
+    unlock = (ev) => {
+      if (ev && ev.target && ev.target.closest && ev.target.closest('#sound')) return;
+      if (!audio.paused) return;
+      start().then((ok) => { if (ok) detach(); });
+    };
+    events.forEach((e) => window.addEventListener(e, unlock, { passive: true }));
+
+    soundBtn.addEventListener('click', async (ev) => {
+      ev.stopPropagation();
+      if (audio.paused) {
+        const ok = await start();
+        if (ok) {
+          detach();
+          try { localStorage.setItem('cpc:music', 'on'); } catch (e) {}
+        }
+      } else {
+        await stop();
+        try { localStorage.setItem('cpc:music', 'off'); } catch (e) {}
+      }
+    });
+
+    /* keep the icon honest if playback stops for another reason */
+    audio.addEventListener('pause', () => { if (!started) paintButton(false); });
+    audio.addEventListener('play', () => paint(true));
+  }
 })();
