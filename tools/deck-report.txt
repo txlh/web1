@@ -1,0 +1,158 @@
+size: 13.33 x 7.50 in
+slides: 6
+--- slide 1 (layout=Blank)
+  AUTO_SHAPE (1)     ( 0.00, 0.00) 13.33x 7.50  'Rectangle 1'
+  PICTURE (13)       ( 0.00, 0.00) 13.33x 7.50  'Picture 2'
+      image: image/jpeg (1280, 853)
+  AUTO_SHAPE (1)     ( 0.00, 0.00) 13.33x 7.50  'Rectangle 3'
+  TEXT_BOX (17)      ( 0.90, 2.35) 11.53x 1.10  'TextBox 4'
+      text: Campus Plant Corner
+      run: 'Campus Plant Corner' size=34.0 font=Noto Sans CJK SC bold=True
+  TEXT_BOX (17)      ( 2.10, 3.37)  9.13x 1.11  'TextBox 5'
+      text: 校园绿植小店 / Small plants, big love. / 小植物，大爱心。
+      run: '校园绿植小' size=16.0 font=Noto Sans CJK SC bold=False
+      run: 'Small plants, big lo' size=16.0 font=Noto Sans CJK SC bold=False
+      run: '小植物，大爱心' size=16.0 font=Noto Sans CJK SC bold=False
+  TEXT_BOX (17)      ( 0.90, 6.80) 11.53x 0.40  'TextBox 6'
+      text: 2026.11.01
+      run: '2026.11.01' size=12.0 font=Noto Sans CJK SC bold=False
+--- slide 2 (layout=Blank)
+  AUTO_SHAPE (1)     ( 0.00, 0.00) 13.33x 7.50  'Rectangle 1'
+  TEXT_BOX (17)      ( 0.90, 0.70) 11.53x 0.90  'TextBox 2'
+      text: Our Logo 我们的Logo
+      run: 'Our Logo 我们的Logo' size=22.0 font=Noto Sans CJK SC bold=True
+  AUTO_SHAPE (1)     ( 0.90, 1.60)  0.60x 0.05  'Rectangle 3'
+  TEXT_BOX (17)      ( 6.43, 1.95)  0.74x 2.45  'TextBox 5'
+      text: 01
+      run: '01' size=22.0 font=Arial bold=False
+  AUTO_SHAPE (1)     ( 7.28, 2.65)  0.02x 1.05  'Rectangle 6'
+  TEXT_BOX (17)      ( 7.41, 2.03)  5.02x 2.31  'TextBox 7'
+      text: Our logo is shaped like the “infinity” symbol.我们logo的外形呈“无限”形状
+      run: 'Our logo is shaped l' size=17.0 font=Noto Sans CJK SC bold=None
+  AUTO_SHAPE (1)     ( 6.43, 4.40)  6.00x 0.01  'Rectangle 8'
+  TEXT_BOX (17)      ( 6.43, 4.40)  0.74x 2.45  'TextBox 9'
+      text: 02
+      run: '02' size=22.0 font=Arial bold=False
+  AUTO_SHAPE (1)     ( 7.28, 5.10)  0.02x 1.05  'Rectangle 10'
+  TEXT_BOX (17)      ( 7.41, 4.47)  5.02x 2.31  'TextBox 11'
+      text: It symbolizes the continuation of life and infinite possibilities.象征着生命的延续和无限可能。
+      run: 'It symbolizes the co' size=17.0 font=Noto Sans CJK SC bold=None
+  PICTURE (13)       ( 0.00, 2.91)  6.58x 2.99  '图片 13'
+      image: image/jpeg (474, 215)
+--- slide 3 (layout=Blank)
+  AUTO_SHAPE (1)     ( 0.00, 0.00) 13.33x 7.50  'Rectangle 1'
+  TEXT_BOX (17)      ( 0.90, 0.70) 11.53x 0.90  'TextBox 2'
+      text: About Us 关于我们
+      run: 'About Us 关于我们' size=22.0 font=Noto Sans CJK SC bold=True
+  AUTO_SHAPE (1)     ( 0.90, 1.60)  0.60x 0.05  'Rectangle 3'
+  PICTURE (13)       ( 7.32, 2.70)  5.11x 3.41  'Picture 4'
+      image: image/jpeg (1280, 853)
+  TEXT_BOX (17)      ( 0.90, 1.95)  0.74x 2.45  'TextBox 5'
+      text: 01
+      run: '01' size=22.0 font=Arial bold=False
+  AUTO_SHAPE (1)     ( 1.74, 2.65)  0.02x 1.05  'Rectangle 6'
+  TEXT_BOX (17)      ( 1.88, 2.02)  5.02x 2.31  'TextBox 7'
+      text: We sell small plants. 我们卖小盆栽。
+      run: 'We sell small plants' size=17.0 font=Noto Sans CJK SC bold=None
+  AUTO_SHAPE (1)     ( 0.90, 4.40)  6.00x 0.01  'Rectangle 8'
+  TEXT_BOX (17)      ( 0.90, 4.40)  0.74x 2.45  'TextBox 9'
+      text: 02
+      run: '02' size=22.0 font=Arial bold=False
+  AUTO_SHAPE (1)     ( 1.74, 5.10)  0.02x 1.05  'Rectangle 10'
+  TEXT_BOX (17)      ( 1.88, 4.47)  5.02x 2.31  'TextBox 11'
+      text: We help students care for plants. 我们帮学生养植物。
+      run: 'We help students car' size=17.0 font=Noto Sans CJK SC bold=None
+--- slide 4 (layout=Blank)
+  AUTO_SHAPE (1)     ( 0.00, 0.00) 13.33x 7.50  'Rectangle 1'
+  TEXT_BOX (17)      ( 0.90, 0.70) 11.53x 0.90  'TextBox 2'
+      text: Our Products 我们的产品
+      run: 'Our Products 我们的产品' size=22.0 font=Noto Sans CJK SC bold=True
+  AUTO_SHAPE (1)     ( 0.90, 1.60)  0.60x 0.05  'Rectangle 3'
+  AUTO_SHAPE (1)     ( 1.00, 1.95)  3.63x 4.90  'Rounded Rectangle 4'
+  PICTURE (13)       ( 1.00, 1.95)  3.63x 4.48  'Picture 5'
+      image: image/jpeg (1280, 1280)
+  TEXT_BOX (17)      ( 1.00, 6.43)  3.63x 0.42  'TextBox 6'
+      text: Succulents 多肉
+      run: 'Succulents 多肉' size=11.0 font=Noto Sans CJK SC bold=False
+  AUTO_SHAPE (1)     ( 4.85, 1.95)  3.63x 4.90  'Rounded Rectangle 7'
+  PICTURE (13)       ( 4.85, 1.95)  3.63x 4.48  'Picture 8'
+      image: image/jpeg (1080, 1080)
+  TEXT_BOX (17)      ( 4.85, 6.43)  3.63x 0.42  'TextBox 9'
+      text: Green Radish 绿萝
+      run: 'Green Radish 绿萝' size=11.0 font=Noto Sans CJK SC bold=False
+  AUTO_SHAPE (1)     ( 8.70, 1.95)  3.63x 4.90  'Rounded Rectangle 10'
+  PICTURE (13)       ( 8.70, 1.95)  3.63x 4.48  'Picture 11'
+      image: image/jpeg (800, 800)
+  TEXT_BOX (17)      ( 8.70, 6.43)  3.63x 0.42  'TextBox 12'
+      text: Flower Pots 花盆
+      run: 'Flower Pots 花盆' size=11.0 font=Noto Sans CJK SC bold=False
+--- slide 5 (layout=Blank)
+  AUTO_SHAPE (1)     ( 0.00, 0.00) 13.33x 7.50  'Rectangle 1'
+  TEXT_BOX (17)      ( 0.90, 0.70) 11.53x 0.90  'TextBox 2'
+      text: Our Team 我们的团队
+      run: 'Our Team 我们的团队' size=22.0 font=Noto Sans CJK SC bold=True
+  AUTO_SHAPE (1)     ( 0.90, 1.60)  0.60x 0.05  'Rectangle 3'
+  AUTO_SHAPE (1)     ( 0.90, 2.10)  3.58x 4.55  'Rounded Rectangle 4'
+  AUTO_SHAPE (1)     ( 1.08, 2.76)  3.22x 3.71  'Rounded Rectangle 5'
+  AUTO_SHAPE (1)     ( 1.87, 2.10)  1.65x 0.50  'Round Same Side Corner Rectangle 6'
+  TEXT_BOX (17)      ( 1.87, 2.10)  1.65x 0.50  'TextBox 7'
+      text: Shop Manager 店长
+      run: 'Shop Manager 店长' size=11.0 font=Noto Sans CJK SC bold=True
+  TEXT_BOX (17)      ( 1.30, 2.96)  2.78x 3.29  'TextBox 8'
+      text: The manager runs the shop. 店长管店。
+      run: 'The manager runs the' size=16.0 font=Noto Sans CJK SC bold=None
+  AUTO_SHAPE (1)     ( 4.88, 2.10)  3.58x 4.55  'Rounded Rectangle 9'
+  AUTO_SHAPE (1)     ( 5.06, 2.76)  3.22x 3.71  'Rounded Rectangle 10'
+  AUTO_SHAPE (1)     ( 5.84, 2.10)  1.65x 0.50  'Round Same Side Corner Rectangle 11'
+  TEXT_BOX (17)      ( 5.84, 2.10)  1.65x 0.50  'TextBox 12'
+      text: Sales Team 销售组
+      run: 'Sales Team 销售组' size=11.0 font=Noto Sans CJK SC bold=True
+  TEXT_BOX (17)      ( 5.28, 2.96)  2.78x 3.29  'TextBox 13'
+      text: The sales team sells plants. 销售组卖植物。
+      run: 'The sales team sells' size=16.0 font=Noto Sans CJK SC bold=None
+  AUTO_SHAPE (1)     ( 8.86, 2.10)  3.58x 4.55  'Rounded Rectangle 14'
+  AUTO_SHAPE (1)     ( 9.04, 2.76)  3.22x 3.71  'Rounded Rectangle 15'
+  AUTO_SHAPE (1)     ( 9.82, 2.10)  1.65x 0.50  'Round Same Side Corner Rectangle 16'
+  TEXT_BOX (17)      ( 9.82, 2.10)  1.65x 0.50  'TextBox 17'
+      text: Care Team 养护组
+      run: 'Care Team 养护组' size=11.0 font=Noto Sans CJK SC bold=True
+  TEXT_BOX (17)      ( 9.26, 2.96)  2.78x 3.29  'TextBox 18'
+      text: The care team waters plants. 养护组浇水。
+      run: 'The care team waters' size=16.0 font=Noto Sans CJK SC bold=None
+--- slide 6 (layout=Blank)
+  AUTO_SHAPE (1)     ( 0.00, 0.00) 13.33x 7.50  'Rectangle 1'
+  TEXT_BOX (17)      ( 0.90, 0.70) 11.53x 0.90  'TextBox 2'
+      text: We Want To Say 想说的话
+      run: 'We Want To Say 想说的话' size=22.0 font=Noto Sans CJK SC bold=True
+  AUTO_SHAPE (1)     ( 0.90, 1.60)  0.60x 0.05  'Rectangle 3'
+  PICTURE (13)       ( 0.90, 2.70)  5.11x 3.41  'Picture 4'
+      image: image/jpeg (1280, 853)
+  TEXT_BOX (17)      ( 6.43, 1.95)  0.74x 1.63  'TextBox 5'
+      text: 01
+      run: '01' size=22.0 font=Arial bold=False
+  AUTO_SHAPE (1)     ( 7.28, 2.26)  0.02x 1.01  'Rectangle 6'
+  TEXT_BOX (17)      ( 7.41, 2.02)  5.02x 1.49  'TextBox 7'
+      text: Plants make campus green. 植物让校园更绿。
+      run: 'Plants make campus g' size=17.0 font=Noto Sans CJK SC bold=None
+  AUTO_SHAPE (1)     ( 6.43, 3.58)  6.00x 0.01  'Rectangle 8'
+  TEXT_BOX (17)      ( 6.43, 3.58)  0.74x 1.63  'TextBox 9'
+      text: 02
+      run: '02' size=22.0 font=Arial bold=False
+  AUTO_SHAPE (1)     ( 7.28, 3.89)  0.02x 1.01  'Rectangle 10'
+  TEXT_BOX (17)      ( 7.41, 3.65)  5.02x 1.49  'TextBox 11'
+      text: Let's love plants and nature. 让我们爱护植物和自然。
+      run: "Let's love plants an" size=17.0 font=Noto Sans CJK SC bold=None
+  AUTO_SHAPE (1)     ( 6.43, 5.22)  6.00x 0.01  'Rectangle 12'
+  TEXT_BOX (17)      ( 6.43, 5.22)  0.74x 1.63  'TextBox 13'
+      text: 03
+      run: '03' size=22.0 font=Arial bold=False
+  AUTO_SHAPE (1)     ( 7.28, 5.53)  0.02x 1.01  'Rectangle 14'
+  TEXT_BOX (17)      ( 7.41, 5.29)  5.02x 1.49  'TextBox 15'
+      text: Thank you! 谢谢！
+      run: 'Thank you! 谢谢！' size=17.0 font=Noto Sans CJK SC bold=None
+  TEXT_BOX (17)      ( 5.77, 7.16)  0.50x 0.22  'AIGCMark_left'
+      text: 本文档由
+      run: '本文档由' size=8.0 font=MiSans bold=None
+  PICTURE (13)       ( 6.29, 7.20)  0.16x 0.16  'AIGCMark_logo'
+      image: image/png (300, 300)
+  TEXT_BOX (17)      ( 6.01, 7.24)  0.50x 0.08  'AIGCMark_right'

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" role="img" aria-label="Campus Plant Corner">
+  <rect width="24" height="24" rx="5" fill="#F6F1E5"/>
+  <g fill="none" stroke="#0E6B4F" stroke-linecap="round">
+    <path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z" stroke-width="2.6"/>
+    <path d="M5 12h2.3M6.15 11.15v1.7" stroke-width=".8"/>
+    <path d="M16.8 12h2.3" stroke-width=".8"/>
+  </g>
+</svg>
