@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campus Plant Corner · 校园绿植小店</title>
+<meta name="description" content="校园绿植小店：多肉、绿萝、手作花盆，每周三、五中午出摊。小植物，大爱心。Campus Plant Corner — succulents, pothos and hand-thrown pots, sold on campus.">
+<meta name="theme-color" content="#F6F1E5">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#story">跳到正文 / Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="shell nav__inner">
+    <a class="brand" href="#top" aria-label="Campus Plant Corner 首页">
+      <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-linecap="round">
+          <path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z" stroke-width="3.05"/>
+          <path d="M5 12h2.3M6.15 10.85v2.3" stroke-width=".8"/>
+          <path d="M16.8 12h2.3" stroke-width=".8"/>
+        </g>
+      </svg>
+      <span class="brand__word">Campus Plant Corner<em>校园绿植小店</em></span>
+    </a>
+
+    <nav class="nav__links" aria-label="主导航 / Main">
+      <a href="#story"><span>故事</span><em>Story</em></a>
+      <a href="#plants"><span>植物</span><em>Plants</em></a>
+      <a href="#how"><span>怎么买</span><em>How</em></a>
+      <a href="#care"><span>养护</span><em>Care</em></a>
+      <a href="#team"><span>团队</span><em>Team</em></a>
+    </nav>
+
+    <a class="btn btn--solid btn--sm nav__cta" href="#visit">
+      <span class="btn__label">到店逛逛<em>Visit us</em></span>
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu" aria-label="打开菜单 / Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile" id="mobileMenu" hidden>
+    <a href="#story"><span>故事</span><em>Story</em></a>
+    <a href="#plants"><span>植物</span><em>Plants</em></a>
+    <a href="#how"><span>怎么买</span><em>How it works</em></a>
+    <a href="#care"><span>养护</span><em>Care</em></a>
+    <a href="#team"><span>团队</span><em>Team</em></a>
+    <a href="#visit"><span>到店逛逛</span><em>Visit us</em></a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ───────────────────────────── HERO ───────────────────────────── -->
+  <section class="hero">
+    <div class="shell hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Campus Plant Corner · 校园绿植小店</p>
+        <h1 class="display">
+          小植物，<br><em>大爱心</em>。
+        </h1>
+        <p class="latin">( Small plants, big love )</p>
+        <p class="lede">
+          我们把多肉、绿萝和手作花盆搬到校园的角落。你负责喜欢——浇水、换土、放假托管，都可以交给我们。
+        </p>
+        <p class="lede en">We bring succulents, pothos and hand-thrown pots to a corner of campus. You do the loving — watering, repotting and holiday boarding can be ours.</p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#plants">
+            <span class="btn__label">挑一盆带走<em>Pick one up</em></span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#how"><span class="btn__label">我们怎么卖<em>How we sell</em></span></a>
+        </div>
+        <dl class="hero__meta">
+          <div><dt>出摊 <em>Stall</em></dt><dd>每周三 / 周五 12:00</dd><dd class="sub">Wed &amp; Fri, 12:00</dd></div>
+          <div><dt>地点 <em>Where</em></dt><dd>A 座教学楼 门口</dd><dd class="sub">Building A entrance</dd></div>
+          <div><dt>起价 <em>From</em></dt><dd>¥15 起</dd><dd class="sub">from ¥15</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero__visual">
+        <canvas class="blob" id="blob" aria-hidden="true"></canvas>
+
+        <figure class="frame" data-parallax>
+          <img src="assets/img/hero-plant.jpg" alt="双手捧着一盆刚拼好的多肉 / Hands holding a freshly potted succulent mix" width="600" height="750">
+          <figcaption>No.01 · 多肉拼盆 · ¥28 <em>Succulent mix</em></figcaption>
+        </figure>
+
+        <div class="chip">
+          <span class="chip__pip" aria-hidden="true"></span>
+          <span>养护组：本周已提醒 <b>32</b> 位同学浇水<em>Care team · 32 watering reminders sent</em></span>
+        </div>
+
+        <div class="stamp" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="circlePath" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+            <text><textPath href="#circlePath">CAMPUS PLANT CORNER · 校园绿植小店 · EST. 2026 ·</textPath></text>
+            <path d="M60 47c-2.6 0-4.6 2-4.6 4.6 0 3.4 4.6 8.4 4.6 8.4s4.6-5 4.6-8.4c0-2.6-2-4.6-4.6-4.6Z" fill="currentColor" opacity=".85"/>
+          </svg>
+        </div>
+
+        <svg class="sprig sprig--a" viewBox="0 0 120 200" aria-hidden="true">
+          <path d="M60 196C58 150 54 110 40 74" fill="none" stroke="currentColor" stroke-width="1.1"/>
+          <g fill="none" stroke="currentColor" stroke-width="1.1">
+            <ellipse cx="44" cy="86" rx="15" ry="7" transform="rotate(-38 44 86)"/>
+            <ellipse cx="52" cy="112" rx="16" ry="7.5" transform="rotate(20 52 112)"/>
+            <ellipse cx="40" cy="140" rx="16" ry="7" transform="rotate(-30 40 140)"/>
+            <ellipse cx="56" cy="163" rx="15" ry="7" transform="rotate(16 56 163)"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span></span>向下 Scroll</div>
+  </section>
+
+  <!-- ──────────────────────────── MARQUEE ─────────────────────────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track" id="marquee">
+      <span>多肉 <em>Succulents</em></span><i>✳</i>
+      <span>绿萝 <em>Pothos</em></span><i>✳</i>
+      <span>手作花盆 <em>Hand-thrown pots</em></span><i>✳</i>
+      <span>宿舍配送 <em>Dorm delivery</em></span><i>✳</i>
+      <span>免费换盆 <em>Free repotting</em></span><i>✳</i>
+      <span>假期寄养 <em>Holiday boarding</em></span><i>✳</i>
+      <span>校园摊位 <em>Campus stall</em></span><i>✳</i>
+      <span>养护提醒 <em>Care reminders</em></span><i>✳</i>
+    </div>
+  </div>
+
+  <!-- ───────────────────────────── STORY ──────────────────────────── -->
+  <section class="section" id="story">
+    <div class="shell">
+      <div class="sec-head" data-reveal>
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">关于我们 <em>About Us</em></h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+
+      <div class="split">
+        <ol class="rows">
+          <li class="row" data-reveal style="--i:0">
+            <span class="row__num">01</span>
+            <div class="row__body">
+              <h3>我们卖小盆栽。<em>We sell small plants.</em></h3>
+              <p>多肉、绿萝、小陶盆，都摆在一条长桌上。没有大盆栽，因为宿舍的窗台只有那么宽。</p>
+              <p class="en">Succulents, pothos and small ceramic pots, all on one long table. Nothing large — a dorm windowsill is only so wide.</p>
+            </div>
+          </li>
+          <li class="row" data-reveal style="--i:1">
+            <span class="row__num">02</span>
+            <div class="row__body">
+              <h3>我们帮学生养植物。<em>We help students care for plants.</em></h3>
+              <p>买走的那天起，它还在我们名单上。每周一条浇水提醒，黄叶了拍张照就行，放假可以寄养在店里。</p>
+              <p class="en">From the day you take it home, it stays on our list. One watering reminder a week, a photo away when a leaf yellows, and boarding at the shop over the holidays.</p>
+            </div>
+          </li>
+        </ol>
+
+        <figure class="polaroid" data-reveal style="--i:2">
+          <img src="assets/img/hands-photo.jpg" alt="第一次出摊时，同学捧着一盆多肉 / A student holding a pot at our first stall" width="1126" height="750">
+          <figcaption>第一次出摊 · 周三中午 · 卖出 11 盆<br><em>First stall, Wednesday noon — 11 pots sold</em></figcaption>
+        </figure>
+      </div>
+
+      <div class="stats" data-reveal>
+        <div class="stat"><b data-count="1240">0</b><span>盆植物找到了新主人<em>plants found a new home</em></span></div>
+        <div class="stat"><b data-count="32">0</b><span>位同学在养护群里<em>students in the care group</em></span></div>
+        <div class="stat"><b data-count="14">0</b><span>次免费换盆换土<em>free repottings</em></span></div>
+        <div class="stat"><b>0</b><span>盆因为没人管而枯掉<em>plants lost to neglect</em></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────── PLANTS ──────────────────────────── -->
+  <section class="section section--tight" id="plants">
+    <div class="shell">
+      <div class="sec-head" data-reveal>
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">我们的产品 <em>Our Products</em></h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+
+      <ul class="cards">
+        <li class="card" data-reveal style="--i:0">
+          <a class="card__link" href="#visit">
+            <figure class="card__fig">
+              <img src="assets/img/products-succulents.jpg" alt="一盆拼好的多肉 / A potted succulent mix" width="480" height="600">
+              <span class="card__price">¥15 起 <em>from</em></span>
+            </figure>
+            <div class="card__foot">
+              <span class="card__idx">01</span>
+              <h3>多肉 <em>Succulents</em></h3>
+              <span class="card__arrow" aria-hidden="true">↗</span>
+            </div>
+            <p class="card__note">两周浇一次也不会死。适合总是忘记浇水的人。</p>
+            <p class="card__note en">Happy with a drink every two weeks — built for people who forget.</p>
+          </a>
+        </li>
+        <li class="card" data-reveal style="--i:1">
+          <a class="card__link" href="#visit">
+            <figure class="card__fig">
+              <img src="assets/img/products-pothos.jpg" alt="挂在窗边的绿萝 / A pothos hanging by the window" width="792" height="990">
+              <span class="card__price">¥18 起 <em>from</em></span>
+            </figure>
+            <div class="card__foot">
+              <span class="card__idx">02</span>
+              <h3>绿萝 <em>Green Radish</em></h3>
+              <span class="card__arrow" aria-hidden="true">↗</span>
+            </div>
+            <p class="card__note">长得快，扦插一截就能再活一盆。宿舍北窗也能过。</p>
+            <p class="card__note en">Grows fast — one cutting becomes another pot. Tolerates a north-facing dorm window.</p>
+          </a>
+        </li>
+        <li class="card" data-reveal style="--i:2">
+          <a class="card__link" href="#visit">
+            <figure class="card__fig">
+              <img src="assets/img/products-pots.jpg" alt="带小花装饰的手作陶盆 / Hand-thrown pots with small flower appliqués" width="792" height="990">
+              <span class="card__price">¥25 起 <em>from</em></span>
+            </figure>
+            <div class="card__foot">
+              <span class="card__idx">03</span>
+              <h3>花盆 <em>Flower Pots</em></h3>
+              <span class="card__arrow" aria-hidden="true">↗</span>
+            </div>
+            <p class="card__note">手工捏的陶盆，每只都不一样。买盆送一袋颗粒土。</p>
+            <p class="card__note en">Thrown by hand, so no two are alike. Every pot comes with a bag of gritty mix.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── HOW ────────────────────────────── -->
+  <section class="section how" id="how">
+    <div class="shell">
+      <div class="sec-head" data-reveal>
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">怎么买 <em>How It Works</em></h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+      <p class="how__intro" data-reveal>四步。从看见它，到它在你窗台上活过第一个学期。</p>
+      <p class="how__intro en" data-reveal>Four steps, from first glance to its first full semester on your windowsill.</p>
+
+      <ol class="steps">
+        <li class="step" data-reveal style="--i:0">
+          <span class="step__n">01</span>
+          <h3>逛一逛 <em>Drop by</em></h3>
+          <p>每周三、周五中午 12:00，A 座教学楼门口的长桌。下雨就挪到门厅里。</p>
+          <p class="en">Wednesdays and Fridays at 12:00, a long table outside Building A. On rainy days we move into the lobby.</p>
+        </li>
+        <li class="step" data-reveal style="--i:1">
+          <span class="step__n">02</span>
+          <h3>挑一盆 <em>Pick one</em></h3>
+          <p>不知道选哪个就说你的窗朝哪边、多久想起来一次浇水，我们替你挑。</p>
+          <p class="en">Not sure which one? Tell us which way your window faces and how often you remember to water — we will choose for you.</p>
+        </li>
+        <li class="step" data-reveal style="--i:2">
+          <span class="step__n">03</span>
+          <h3>带回去 <em>Take it home</em></h3>
+          <p>旧报纸加麻绳捆好，宿舍楼下可送。搬上楼的时候不会撒一车土。</p>
+          <p class="en">Wrapped in newspaper and twine, delivered to your dorm if you like. No trail of soil on the stairs.</p>
+        </li>
+        <li class="step" data-reveal style="--i:3">
+          <span class="step__n">04</span>
+          <h3>养下去 <em>Keep it alive</em></h3>
+          <p>扫码进养护群。每周一条浇水提醒，出问题随时问，不用自己搜。</p>
+          <p class="en">Scan in to the care group: a weekly reminder, and a human to ask instead of a search bar.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── CARE ───────────────────────────── -->
+  <section class="care" id="care">
+    <div class="shell care__inner">
+      <div class="care__copy">
+        <div class="sec-head sec-head--inline" data-reveal>
+          <span class="sec-num">04</span>
+          <h2 class="sec-title">养护 <em>Care</em></h2>
+        </div>
+        <h3 class="care__title" data-reveal>你回家过假期，<br>植物我们照看。</h3>
+        <p class="care__title-en" data-reveal>You go home for the break — we look after the plants.</p>
+        <p class="care__text" data-reveal>
+          放假前把盆搬到店里，回来再接走。平时加进养护群，每周三一条浇水提醒——不是群发广告，是按你买的那一盆发的。
+        </p>
+        <p class="care__text en" data-reveal>
+          Bring the pot to the shop before you leave and collect it when you are back. During term, one reminder every Wednesday — not a newsletter, but a note about the plant you actually bought.
+        </p>
+        <ul class="care__list" data-reveal>
+          <li><span>30 天 <em>30 days</em></span><p>免费寄养，寒暑假都可以<em>Free boarding, winter and summer break</em></p></li>
+          <li><span>每周 <em>Weekly</em></span><p>浇水提醒，按植物品种发<em>Watering reminders, matched to the species</em></p></li>
+          <li><span>免费 <em>Free</em></span><p>换盆换土，每年一次<em>Repotting and fresh soil, once a year</em></p></li>
+        </ul>
+        <a class="btn btn--cream" href="#visit" data-reveal><span class="btn__label">加进养护群<em>Join the care group</em></span>
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="app" data-reveal style="--i:1" role="img" aria-label="养护日历界面示意：本周五盆植物已完成浇水 / Plant care calendar mockup">
+        <div class="app__bar">
+          <span class="app__dots"><i></i><i></i><i></i></span>
+          <span class="app__name">养护小管家 <em>Plant Care</em></span>
+          <span class="app__week">第 12 周 <em>Wk 12</em></span>
+        </div>
+        <div class="app__head">
+          <div>
+            <p class="app__label">本周待浇水 <em>Watering this week</em></p>
+            <p class="app__count"><b>5</b><span>/ 7 已完成 · done</span></p>
+          </div>
+          <span class="app__badge">养护组在线 <em>care team online</em></span>
+        </div>
+        <ul class="app__list">
+          <li>
+            <span class="app__plant">多肉 · 拼盆 <em>succulent mix</em></span>
+            <span class="app__meter"><i style="--p:100%"></i></span>
+            <span class="app__state app__state--ok">已浇 <em>done</em></span>
+          </li>
+          <li>
+            <span class="app__plant">绿萝 · 北窗 <em>pothos · north</em></span>
+            <span class="app__meter"><i style="--p:100%"></i></span>
+            <span class="app__state app__state--ok">已浇 <em>done</em></span>
+          </li>
+          <li>
+            <span class="app__plant">珍珠吊兰 <em>string of pearls</em></span>
+            <span class="app__meter"><i style="--p:72%"></i></span>
+            <span class="app__state">今天 <em>today</em></span>
+          </li>
+          <li>
+            <span class="app__plant">小陶盆 · 空 <em>empty pot</em></span>
+            <span class="app__meter"><i style="--p:18%"></i></span>
+            <span class="app__state">等你来种 <em>plant me</em></span>
+          </li>
+        </ul>
+        <div class="app__foot">
+          <span>下次提醒 · 周三 12:00 <em>next: Wed 12:00</em></span>
+          <span class="app__cta">提醒我 <em>remind me</em></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── LOGO ───────────────────────────── -->
+  <section class="section logo" id="logo">
+    <div class="shell">
+      <div class="sec-head" data-reveal>
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">我们的 Logo <em>Our Logo</em></h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+
+      <div class="logo__body">
+        <div class="logo__mark" data-reveal aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round">
+              <path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z" stroke-width="3.05"/>
+              <path d="M5 12h2.3M6.15 10.85v2.3" stroke-width=".8"/>
+              <path d="M16.8 12h2.3" stroke-width=".8"/>
+            </g>
+          </svg>
+        </div>
+
+        <ol class="logo__notes">
+          <li data-reveal style="--i:0">
+            <span class="logo__num">01</span>
+            <p>外形是一个「无限」符号 ∞。<br><em>Our logo is shaped like the infinity symbol.</em></p>
+          </li>
+          <li data-reveal style="--i:1">
+            <span class="logo__num">02</span>
+            <p>象征生命的延续，和无限的可能。<br><em>It symbolises the continuation of life and infinite possibilities.</em></p>
+          </li>
+        </ol>
+      </div>
+
+      <p class="logo__foot" data-reveal>左边的 <b>＋</b> 是加一点绿，右边的 <b>－</b> 是减一点焦虑。</p>
+      <p class="logo__foot en" data-reveal>A <b>＋</b> for a little more green on the left, a <b>－</b> for a little less anxiety on the right.</p>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── TEAM ───────────────────────────── -->
+  <section class="section" id="team">
+    <div class="shell">
+      <div class="sec-head" data-reveal>
+        <span class="sec-num">06</span>
+        <h2 class="sec-title">我们的团队 <em>Our Team</em></h2>
+        <span class="sec-rule" aria-hidden="true"></span>
+      </div>
+
+      <p class="team__intro" data-reveal>一个店长，两个小组。谁决定什么、谁在摊位、谁在群里回消息，都在下面这张图里。</p>
+      <p class="team__intro en" data-reveal>One manager, two teams — who decides, who runs the stall, who answers in the group.</p>
+
+      <div class="org">
+        <div class="org__lead">
+          <article class="member" data-reveal style="--i:0">
+            <span class="member__tag member__tag--blue">店长 <em>Shop Manager</em></span>
+            <p>店长管店。选品、订货、和学校谈摊位，都是她的事。</p>
+            <p class="en">Runs the shop: choosing what we stock, placing orders, and negotiating the stall with the university.</p>
+            <span class="member__foot">周一至周五 · 在店里 <em>Mon–Fri · in the shop</em></span>
+          </article>
+        </div>
+
+        <div class="org__row">
+          <article class="member" data-reveal style="--i:1">
+            <span class="member__tag member__tag--jade">销售组 <em>Sales Team</em></span>
+            <p>销售组卖植物。出摊、介绍品种、帮你挑到合适的那一盆。</p>
+            <p class="en">Sells the plants: setting up the stall, talking through varieties, finding the one that suits your window.</p>
+            <span class="member__foot">周三 / 周五 · 长桌旁 <em>Wed &amp; Fri · at the table</em></span>
+          </article>
+          <article class="member" data-reveal style="--i:2">
+            <span class="member__tag member__tag--ochre">养护组 <em>Care Team</em></span>
+            <p>养护组浇水。换盆、寄养、回消息，让每一盆都活到下学期。</p>
+            <p class="en">Keeps them alive: watering, repotting, boarding, and answering messages until next term.</p>
+            <span class="member__foot">每天 · 群里都在 <em>Every day · in the group</em></span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── SAY ────────────────────────────── -->
+  <section class="section say" id="say">
+    <div class="shell say__inner">
+      <figure class="say__fig" data-reveal>
+        <img src="assets/img/forest.jpg" alt="秋天森林里的一条小路 / A path through an autumn wood" width="1132" height="745">
+      </figure>
+      <div class="say__copy">
+        <div class="sec-head sec-head--inline" data-reveal>
+          <span class="sec-num">07</span>
+          <h2 class="sec-title">想说的话 <em>We Want To Say</em></h2>
+        </div>
+        <ol class="say__list">
+          <li data-reveal style="--i:0"><span>01</span><p>植物让校园更绿。<em>Plants make campus green.</em></p></li>
+          <li data-reveal style="--i:1"><span>02</span><p>让我们一起爱护植物和自然。<em>Let’s love plants and nature, together.</em></p></li>
+          <li data-reveal style="--i:2"><span>03</span><p>谢谢你！<em>Thank you!</em></p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────────────────────── VISIT ──────────────────────────── -->
+  <section class="visit" id="visit">
+    <div class="shell visit__inner">
+      <p class="eyebrow eyebrow--center" data-reveal><span class="dot" aria-hidden="true"></span>来见一面 · Come say hi</p>
+      <h2 class="display visit__title" data-reveal>来挑一盆吧，<br><em>带上你的窗台。</em></h2>
+      <p class="visit__latin" data-reveal>( Come pick one — bring your windowsill )</p>
+      <p class="visit__text" data-reveal>周三、周五中午 12:00，A 座门口。下雨在天桥下面。</p>
+      <p class="visit__text en" data-reveal>Wednesdays and Fridays at noon, outside Building A. When it rains, under the footbridge.</p>
+      <div class="visit__actions" data-reveal>
+        <a class="btn btn--solid btn--lg" href="#top"><span class="btn__label">看看有什么<em>See what’s there</em></span>
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="mailto:hello@campusplantcorner.cn"><span class="btn__label">发邮件给我们<em>Email us</em></span></a>
+      </div>
+      <dl class="visit__meta" data-reveal>
+        <div><dt>出摊时间 <em>Hours</em></dt><dd>周三 / 周五 · 12:00 – 13:30</dd><dd class="sub">Wed &amp; Fri · 12:00 – 13:30</dd></div>
+        <div><dt>摊位位置 <em>Where</em></dt><dd>A 座教学楼 正门东侧</dd><dd class="sub">Building A, east of the main entrance</dd></div>
+        <div><dt>联系 <em>Contact</em></dt><dd>hello@campusplantcorner.cn</dd><dd class="sub">We reply within a day</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="shell foot__inner">
+    <div class="foot__brandcol">
+      <div class="foot__brand">
+        <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-linecap="round">
+            <path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z" stroke-width="3.05"/>
+            <path d="M5 12h2.3M6.15 10.85v2.3" stroke-width=".8"/>
+            <path d="M16.8 12h2.3" stroke-width=".8"/>
+          </g>
+        </svg>
+        <span class="brand__word">Campus Plant Corner<em>校园绿植小店</em></span>
+      </div>
+      <p class="foot__tag">校园里的一寸绿：多肉、绿萝和手作花盆。<br>每周三、五中午，A 座教学楼门口。</p>
+      <p class="foot__tag en">A little green on campus: succulents, pothos and pots.<br>Wed &amp; Fri at noon, outside Building A.</p>
+    </div>
+
+    <nav class="foot__nav" aria-label="页脚导航 / Footer">
+      <div><h4>逛 <em>Shop</em></h4><a href="#plants">多肉 · Succulents</a><a href="#plants">绿萝 · Pothos</a><a href="#plants">花盆 · Pots</a></div>
+      <div><h4>了解 <em>About</em></h4><a href="#story">关于我们 · Story</a><a href="#team">团队 · Team</a><a href="#logo">Logo</a></div>
+      <div><h4>联系 <em>Contact</em></h4><a href="#visit">出摊时间 · Hours</a><a href="mailto:hello@campusplantcorner.cn">邮件 · Email</a><a href="#care">养护群 · Care group</a></div>
+    </nav>
+
+    <div class="foot__bottom">
+      <span>© 2026 Campus Plant Corner · 校园绿植小店</span>
+      <span>设计语言参考 <a href="https://vestris.ai" target="_blank" rel="noreferrer">vestris.ai</a>，内容为虚构示例 · Design language after vestris.ai; content is illustrative</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
